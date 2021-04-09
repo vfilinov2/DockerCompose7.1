@@ -1,6 +1,6 @@
 version: '3.3'
 services:
-  build:
+  sbuild:
     build: 
       context: ./build
     volumes:
@@ -8,11 +8,11 @@ services:
         source: wardir
         target: /home/user/target
 
-#  prod:
-#    build: 
-#      context: ./prod
-#    ports:
-#      - "8080:8080"      
+  sprod:
+    build: 
+      context: ./prod
+    ports:
+      - "8080:8080"      
 
 volumes:
   wardir:
