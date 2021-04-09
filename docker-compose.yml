@@ -3,9 +3,17 @@ services:
   build:
     build: 
       context: ./build
+    volumes:
+      - type: volume
+        source: wardir
+        target: /home/user/target
 
-  prod:
-    build: 
-      context: ./prod
-    ports:
-      - "8080:8080"      
+#  prod:
+#    build: 
+#      context: ./prod
+#    ports:
+#      - "8080:8080"      
+
+volumes:
+  wardir:
+#    - driver: local

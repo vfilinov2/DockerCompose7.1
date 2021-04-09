@@ -10,3 +10,4 @@ apt update -y
 WORKDIR /home/user/
 RUN git clone https://github.com/boxfuse/boxfuse-sample-java-war-hello.git ./;\
 mvn package
+
