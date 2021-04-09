@@ -1,0 +1,11 @@
+version: '3.3'
+services:
+  build:
+    build: 
+      context: ./build
+
+  prod:
+    build: 
+      context: ./prod
+    ports:
+      - "8080:8080"      
