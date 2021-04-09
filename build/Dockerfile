@@ -1,5 +1,6 @@
 FROM ubuntu:latest
-RUN apt update -y ;\
+RUN ln -snf /usr/share/zoneinfo/Europe/Moscow /etc/localtime ;\
+apt update -y ;\
 apt install git -y;\
 apt update -y ;\
 apt install maven -y ;\
