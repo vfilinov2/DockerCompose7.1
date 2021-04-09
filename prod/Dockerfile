@@ -1,2 +1,2 @@
 FROM tomcat:latest
-RUN ["/bin/sh"]
+#RUN ["/bin/sh"]
